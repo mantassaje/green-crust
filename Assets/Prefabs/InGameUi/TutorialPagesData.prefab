@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &699494512285091588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699494512285091586}
+  - component: {fileID: 699494512285091587}
+  m_Layer: 0
+  m_Name: TutorialPagesData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &699494512285091586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699494512285091588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.692533, y: -3.588158, z: -10.7421875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &699494512285091587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699494512285091588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cad8952a35d2324f89580b515669102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pages:
+  - {fileID: 21300000, guid: 3834d7862cc186643976e9037ceeaaae, type: 3}
+  - {fileID: 21300000, guid: c280fc4a8f13f0d4e8af0f17f5a0db21, type: 3}
+  - {fileID: 21300000, guid: 8a85f5cb39b5bbb419f24e43d897ee8d, type: 3}
+  - {fileID: 21300000, guid: d91bb96c42775004ba11b2693d1d5d16, type: 3}
+  - {fileID: 21300000, guid: 452c5234f23407d418bb2a228a69e5d3, type: 3}
+  - {fileID: 21300000, guid: 70fae3929dfbebc438952c583a65123a, type: 3}
+  - {fileID: 21300000, guid: a713dbad62811fa4985d5c1a03955819, type: 3}
+  - {fileID: 21300000, guid: 38e9d9388f10b7e41b4232dbef1d41f6, type: 3}
+  - {fileID: 21300000, guid: c78bfe18df0091e4e917682e72d115ab, type: 3}
+  ButtonSpirtes1:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: bddf2009bfa498044906c91e776147e9, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 6d1957b0db2b37e49aa95a6f05e34801, type: 3}
+  - {fileID: 21300000, guid: 67b92d40f0c02f940b3a15fe367e6eb6, type: 3}
+  - {fileID: 21300000, guid: bddf2009bfa498044906c91e776147e9, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300006, guid: 86cb40a294d9a3d439f9605b9a6fd1a0, type: 3}
+  - {fileID: 0}
+  ButtonSpirtes2:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: ffad41dcec53a0840af0cf40ccc62217, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 9e3c99e312d0e104fab73c1b9cdb64d8, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

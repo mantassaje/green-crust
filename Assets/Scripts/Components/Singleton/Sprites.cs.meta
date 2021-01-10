@@ -1,0 +1,77 @@
+fileFormatVersion: 2
+guid: be5dfd5533a8ce6458ebe61c03391b87
+timeCreated: 1572465150
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - RainforestTop1: {instanceID: 0}
+  - RainforestTop2: {instanceID: 0}
+  - RainforestTop3: {instanceID: 0}
+  - RainforestBot1: {instanceID: 0}
+  - RainforestBot2: {instanceID: 0}
+  - RainforestBot3: {instanceID: 0}
+  - TropicsTop1: {instanceID: 0}
+  - TropicsTop2: {instanceID: 0}
+  - TropicsTop3: {instanceID: 0}
+  - TropicsBot1: {instanceID: 0}
+  - TropicsBot2: {instanceID: 0}
+  - TropicsBot3: {instanceID: 0}
+  - SavanaTop1: {instanceID: 0}
+  - SavanaTop2: {instanceID: 0}
+  - SavanaBot1: {instanceID: 0}
+  - SavanaBot2: {instanceID: 0}
+  - WetlandTop1: {instanceID: 0}
+  - WetlandTop2: {instanceID: 0}
+  - WetlandTop3: {instanceID: 0}
+  - WetlandBot1: {instanceID: 0}
+  - WetlandBot2: {instanceID: 0}
+  - WetlandBot3: {instanceID: 0}
+  - LeafForestTop1: {instanceID: 0}
+  - LeafForestTop2: {instanceID: 0}
+  - LeafForestTop3: {instanceID: 0}
+  - LeafForestBot1: {instanceID: 0}
+  - LeafForestBot2: {instanceID: 0}
+  - LeafForestBot3: {instanceID: 0}
+  - GrasslandTop1: {instanceID: 0}
+  - GrasslandTop2: {instanceID: 0}
+  - GrasslandBot1: {instanceID: 0}
+  - GrasslandBot2: {instanceID: 0}
+  - TaigaTop1: {instanceID: 0}
+  - TaigaTop2: {instanceID: 0}
+  - TaigaTop3: {instanceID: 0}
+  - TaigaBot1: {instanceID: 0}
+  - TaigaBot2: {instanceID: 0}
+  - TaigaBot3: {instanceID: 0}
+  - TundraTop1: {instanceID: 0}
+  - TundraTop2: {instanceID: 0}
+  - TundraBot1: {instanceID: 0}
+  - TundraBot2: {instanceID: 0}
+  - Hills1: {instanceID: 0}
+  - Mountains1: {instanceID: 0}
+  - Mountains2: {instanceID: 0}
+  - Mountains3: {instanceID: 0}
+  - ColdDesert: {fileID: 21300000, guid: 81131fbdf25954a4aa7e94f30944cbeb, type: 3}
+  - ColdMud: {fileID: 21300000, guid: 8e8fc16afb897bf41923e07af1935ecf, type: 3}
+  - DeadCold: {fileID: 21300000, guid: 0bd046ebc293d314eab28f0e854e9036, type: 3}
+  - DeadHot: {instanceID: 0}
+  - DepOcean: {instanceID: 0}
+  - ForestGround: {instanceID: 0}
+  - GrasslandGround: {instanceID: 0}
+  - HotDesert: {instanceID: 0}
+  - HotMud: {instanceID: 0}
+  - IceCap: {instanceID: 0}
+  - WarmMud: {instanceID: 0}
+  - RainforestGround: {instanceID: 0}
+  - SavanaGround: {instanceID: 0}
+  - TaigaGround: {instanceID: 0}
+  - TropicGround: {instanceID: 0}
+  - TundraGround: {instanceID: 0}
+  - WarmDesert: {instanceID: 0}
+  - WetlandGround: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

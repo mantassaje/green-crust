@@ -1,0 +1,20 @@
+
+
+As a god, shape the lands of desolate desert surrounded by abyss. Make it suitable for wildlife. And compete with other gods for dominance over land by controlling the climate and subsequently the biomes.
+
+This is a turn based strategy game. It has bots, but they are simple and the best experience whould be playing with your friend on the same computer (hot seat).
+
+Currently the game is early alpha or in prototype faze. It still lacks a lot of features for example saving your game. Currently I am curios about core gameplay.
+
+Sounds from:
+https://freesound.org/people/Imjeax/
+https://freesound.org/people/laurent/ (no commercial)
+https://freesound.org/people/lextrack/
+https://freesound.org/people/felix.blume/
+https://freesound.org/people/arnaud%20coutancier/ (no commercial)
+https://freesound.org/people/klankbeeld/
+https://freesound.org/people/hiriak/
+https://freesound.org/people/juskiddink/
+
+Font from:
+https://www.1001fonts.com/mysterons-brk-font.html
