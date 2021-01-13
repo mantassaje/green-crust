@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections;
 using System.Linq;
-using System.Text;
 
 
 public abstract class WeatherEmitComplexHandler
@@ -20,6 +18,12 @@ public abstract class WeatherEmitComplexHandler
 
     public void DoEmisions()
     {
+        var enumerator = DoEmisionsCoroutine();
+        while (enumerator.MoveNext()) { }
+    }
+
+    public IEnumerator DoEmisionsCoroutine()
+    {
         var allBiomes = Singles.Grid.GetAllBiomes()
             .Where(IsActive)
             .ToList();
@@ -30,7 +34,8 @@ public abstract class WeatherEmitComplexHandler
                 .Where(v => GetEmitionWell(v) >= 1)
                 //Start from smallest
                 //.OrderByDescending(v => GetEmitValue(v))
-                .OrderBy(v => v.Weather.Sorter);
+                .OrderBy(v => v.Weather.Sorter)
+                .ToList();
 
             for (int j = 0; j < EmitQuality; j++)
             {
@@ -39,14 +44,16 @@ public abstract class WeatherEmitComplexHandler
                     EmitToNearbyBiomes(biomeEmiter);
                 }
             }
+
+            yield return null;
         }
     }
 
     protected virtual void EmitToNearbyBiomes(Biome biomeEmiter)
     {
         var biomesReceivers = biomeEmiter.GetNearbyBiomesCache()
-            .Where(biome => GetEmitionWell(biome) + GetValueToEmit(biomeEmiter) < GetEmitionWell(biomeEmiter)
-                || biome == biomeEmiter)
+            .Where(biomeReceiver => GetEmitionWell(biomeReceiver) + GetValueToEmit(biomeEmiter, biomeReceiver) < GetEmitionWell(biomeEmiter)
+                || biomeReceiver == biomeEmiter)
             .OrderBy(v=>v.Weather.Sorter)
             .ToList();
         foreach (var biomeReceiver in biomesReceivers)

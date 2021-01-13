@@ -13,7 +13,7 @@ public static class RainfallEmitService
         rainfallHandler.DoEmisions();
     }
 
-    private static void ResetWorldHumidity()
+    public static void ResetWorldHumidity()
     {
         var biomes = Singles.Grid.GetAllBiomes();
         foreach(var biome in biomes)

@@ -13,7 +13,7 @@ public static class HeatService
         rainfallHandler.DoEmisions();
     }
 
-    private static void ResetWorldHeat()
+    public static void ResetWorldHeat()
     {
         var biomes = Singles.Grid.GetAllBiomes();
         foreach (var biome in biomes)

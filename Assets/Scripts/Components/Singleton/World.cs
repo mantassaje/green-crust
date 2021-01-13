@@ -21,6 +21,8 @@ public class World : NetworkBehaviour {
     [SyncVar]
     public bool IsSandbox = false;
 
+    public ClimateDebugMode ClimateDebugMode = ClimateDebugMode.None;
+
     //Should be in NetworkManager
     [SyncVar]
     public bool IsOnlneMode;
