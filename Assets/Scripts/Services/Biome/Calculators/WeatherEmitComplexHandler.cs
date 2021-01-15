@@ -51,14 +51,17 @@ public abstract class WeatherEmitComplexHandler
 
     protected virtual void EmitToNearbyBiomes(Biome biomeEmiter)
     {
+        var emitionWell = GetEmitionWell(biomeEmiter);
+  
         var biomesReceivers = biomeEmiter.GetNearbyBiomesCache()
-            .Where(biomeReceiver => GetEmitionWell(biomeReceiver) + GetValueToEmit(biomeEmiter, biomeReceiver) < GetEmitionWell(biomeEmiter)
-                || biomeReceiver == biomeEmiter)
+            .Where(biomeReceiver => GetEmitionWell(biomeReceiver) + GetEdgeValueToEmit(emitionWell, biomeReceiver) < emitionWell
+                && biomeReceiver != biomeEmiter)
             .OrderBy(v=>v.Weather.Sorter)
             .ToList();
+
         foreach (var biomeReceiver in biomesReceivers)
         {
-            var addValue = GetValueToEmit(biomeEmiter, biomeReceiver);
+            var addValue = GetEdgeValueToEmit(emitionWell, biomeReceiver);
             AddEmission(biomeEmiter, -addValue);
             AddEmission(biomeReceiver, addValue);
             Commit(biomeReceiver);
@@ -67,27 +70,16 @@ public abstract class WeatherEmitComplexHandler
     }
 
     /// <summary>
-    /// Get value to emit.
-    /// </summary>
-    protected virtual float GetValueToEmit(Biome emiter)
-    {
-        return GetEmitionWell(emiter) * GetEmitRate();
-    }
-
-    /// <summary>
     /// Get value to emit based on both emiter and receiver.
     /// </summary>
-    protected virtual float GetValueToEmit(Biome emiter, Biome receiver)
+    protected virtual float GetEdgeValueToEmit(float emiterTotalWell, Biome receiver)
     {
-        return GetValueToEmit(emiter) * GetBiomeAbsorbtion(receiver, emiter);
+        var numberOfEdges = 6f;
+
+        return emiterTotalWell * EmitToNearRate * GetBiomeAbsorbtion(receiver) / numberOfEdges / EmitQuality;
     }
 
-    protected virtual float GetEmitRate()
-    {
-        return EmitToNearRate / EmitQuality;
-    }
-
-    protected virtual float GetBiomeAbsorbtion(Biome biome, Biome emiter)
+    protected virtual float GetBiomeAbsorbtion(Biome biome)
     {
         var baseAbsorbtion = 1f - biome.Crust.GetHeightRatioSteped();
         baseAbsorbtion = baseAbsorbtion.GetMinMax(0f, 1f);
