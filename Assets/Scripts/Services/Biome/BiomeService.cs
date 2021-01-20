@@ -87,7 +87,44 @@ public static class BiomeService
         {
             biome.Weather.HeatType = DefineHeat(biome);
             biome.Weather.RainfallType = DefineRainfall(biome);
+        }
+
+        SmoothTemperatureInEdges();
+
+        foreach (var biome in biomes)
+        {
             BiomeService.RefreshBiomeType(biome);
+        }
+    }
+
+    /// <summary>
+    /// Sometimes near edges there is single biome hotter then all other biomes near by.
+    /// It does not make sense. But because of nature of this emmision algorithm it is not fixable.
+    /// This algorithm is a bit random. And if biomes are very close to changing heat type there might be 
+    /// one biome that pops out by being hotter and yet near abyss.
+    /// </summary>
+    private static void SmoothTemperatureInEdges()
+    {
+        var edgeBiomes = Singles.Grid.GetAllBiomes()
+            .Where(biome => !biome.IsAbyss && biome.GetNearbyBiomesCache().Any(near => near.IsAbyss));
+
+        var popingOutBiomes = edgeBiomes.Where(biome =>
+            biome.GetNearbyBiomesCache(false)
+                .Where(near => !near.IsAbyss)
+                .All(near => near.Weather.HeatType < biome.Weather.HeatType)
+            ).ToList();
+
+        foreach (var popingOutBiome in popingOutBiomes)
+        {
+            var nearby = popingOutBiome
+                .GetNearbyBiomesCache(false)
+                .Where(near => !near.IsAbyss);
+
+            if (nearby.Any())
+            {
+                popingOutBiome.Weather.Heat = nearby.Max(near => near.Weather.Heat);
+                popingOutBiome.Weather.HeatType = DefineHeat(popingOutBiome);
+            }
         }
     }
 

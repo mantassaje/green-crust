@@ -4,6 +4,8 @@ using System.Linq;
 
 public abstract class WeatherEmitComplexHandler
 {
+    private const int _numberOfEdges = 6;
+
     /// <summary>
     /// Total quantity that can be emited
     /// </summary>
@@ -32,8 +34,8 @@ public abstract class WeatherEmitComplexHandler
         {
             var withHumidityBiomes = allBiomes
                 .Where(v => GetEmitionWell(v) >= 1)
-                //Start from smallest
-                //.OrderByDescending(v => GetEmitValue(v))
+                //Sorting desc seems to produce more smooth transitions. But is sensetive to changes.
+                //Sorting by random non chaning sorter seems to not so sensetive to changes.
                 .OrderBy(v => v.Weather.Sorter)
                 .ToList();
 
@@ -52,12 +54,10 @@ public abstract class WeatherEmitComplexHandler
     protected virtual void EmitToNearbyBiomes(Biome biomeEmiter)
     {
         var emitionWell = GetEmitionWell(biomeEmiter);
-  
+
         var biomesReceivers = biomeEmiter.GetNearbyBiomesCache()
             .Where(biomeReceiver => GetEmitionWell(biomeReceiver) + GetEdgeValueToEmit(emitionWell, biomeReceiver) < emitionWell
-                && biomeReceiver != biomeEmiter)
-            .OrderBy(v=>v.Weather.Sorter)
-            .ToList();
+                && biomeReceiver != biomeEmiter);
 
         foreach (var biomeReceiver in biomesReceivers)
         {
@@ -74,9 +74,7 @@ public abstract class WeatherEmitComplexHandler
     /// </summary>
     protected virtual float GetEdgeValueToEmit(float emiterTotalWell, Biome receiver)
     {
-        var numberOfEdges = 6f;
-
-        return emiterTotalWell * EmitToNearRate * GetBiomeAbsorbtion(receiver) / numberOfEdges / EmitQuality;
+        return emiterTotalWell * EmitToNearRate * GetBiomeAbsorbtion(receiver) / _numberOfEdges / EmitQuality;
     }
 
     protected virtual float GetBiomeAbsorbtion(Biome biome)

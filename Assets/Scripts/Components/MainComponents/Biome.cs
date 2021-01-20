@@ -115,15 +115,17 @@ public class Biome : NetworkBehaviour
     }
 
     /// <summary>
-    /// Returns all touching this biome including it self
+    /// Returns all touching this biome.
     /// </summary>
-    public IEnumerable<Biome> GetNearbyBiomesCache()
+    public IEnumerable<Biome> GetNearbyBiomesCache(bool includeSelf = true)
     {
         if(_nearbyBiomesCache == null)
         {
             _nearbyBiomesCache = Singles.Grid.GetAllNearby(this);
         }
-        return _nearbyBiomesCache;
+        return includeSelf 
+            ? _nearbyBiomesCache
+            : _nearbyBiomesCache.Where(biome => biome != this);
     }
 
     private void DrawBorders()
