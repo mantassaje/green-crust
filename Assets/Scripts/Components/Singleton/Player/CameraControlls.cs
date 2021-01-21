@@ -32,23 +32,23 @@ public class CameraControlls : MonoBehaviour
         var screenWidth = Camera.pixelWidth;
         var screenHeight = Camera.pixelHeight;
 
-        if (Input.GetKey(KeyCode.UpArrow) || Input.mousePosition.y > screenHeight - 30)
+        if (Input.GetKey(KeyCode.UpArrow) || Input.mousePosition.y > screenHeight - 10)
         {
             transform.position = new Vector3(transform.position.x, (transform.position.y + GetMoveSpeed()).GetMinMax(-180f, 50f), 
                 transform.position.z);
         }
-        else if (Input.GetKey(KeyCode.DownArrow) || Input.mousePosition.y < 30)
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.mousePosition.y < 10)
         {
             transform.position = new Vector3(transform.position.x, (transform.position.y - GetMoveSpeed()).GetMinMax(-180f, 50f), 
                 transform.position.z);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.mousePosition.x < 30)
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.mousePosition.x < 10)
         {
             transform.position = new Vector3((transform.position.x - GetMoveSpeed()).GetMinMax(-50f, 200f), 
                 transform.position.y, transform.position.z);
         }
-        else if (Input.GetKey(KeyCode.RightArrow) || Input.mousePosition.x > screenWidth - 30)
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.mousePosition.x > screenWidth - 10)
         {
             transform.position = new Vector3((transform.position.x + GetMoveSpeed()).GetMinMax(-50f, 200f), 
                 transform.position.y, transform.position.z);

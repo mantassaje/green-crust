@@ -29,7 +29,7 @@ namespace Assets.Scripts.Ai
                 var rainBiomeRate = totalRainBiomeCount / totalBiomeCount;
 
                 var totalWaterBiomeCount = ownerBiomes.Count(biome => biome.IsWater);
-                var totalDeadDryBiomeCount = ownerBiomes.Count(biome => biome.Weather.RainfallType <= RainfallTypes.DeadDry && !biome.IsWater);
+                var totalDeadDryBiomeCount = ownerBiomes.Count(biome => biome.Weather.RainfallType <= RainfallTypes.Arid && !biome.IsWater);
                 var deadDryRate = totalDeadDryBiomeCount / totalBiomeCount;
 
                 //Debug.Log("totalNatureRate " + totalNatureRate);

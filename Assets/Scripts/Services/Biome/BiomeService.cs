@@ -130,16 +130,16 @@ public static class BiomeService
 
     public static HeatTypes DefineHeat(Biome biome)
     {
-        if (biome.Weather.Heat < 1) return HeatTypes.DeadCold;
-        if (biome.Weather.Heat < 3) return HeatTypes.Cold;
-        if (biome.Weather.Heat < 7) return HeatTypes.Warm;
+        if (biome.Weather.Heat < 1) return HeatTypes.Frozen;
+        if (biome.Weather.Heat < 4) return HeatTypes.Cold;
+        if (biome.Weather.Heat < 8) return HeatTypes.Warm;
         return HeatTypes.Hot;
     }
     
     public static RainfallTypes DefineRainfall(Biome biome)
     {
         var heatRainDiff = GetHeatRainDiff(biome);
-        if (heatRainDiff < 2) return RainfallTypes.DeadDry;
+        if (heatRainDiff < 2) return RainfallTypes.Arid;
         if (heatRainDiff < 4) return RainfallTypes.Dry;
         if (heatRainDiff < 7) return RainfallTypes.Humid;
         return RainfallTypes.Wet;

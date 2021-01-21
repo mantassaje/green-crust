@@ -6,7 +6,7 @@ using System.Text;
 public enum HeatTypes
 {
     None,
-    DeadCold,
+    Frozen,
     Cold,
     Warm,
     Hot

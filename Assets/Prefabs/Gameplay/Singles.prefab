@@ -261,8 +261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NetworkSinglesPrefab: {fileID: 4398601107307240554, guid: 8072bd2fc61b3ea43a7c8e2fc89d368f,
     type: 3}
-  CameraPrefab: {fileID: 4733777442120848645, guid: 92420eb1115e73942a5a6d1762aff385,
-    type: 3}
 --- !u!1 &907897587391012535
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,8 +361,12 @@ MonoBehaviour:
   Popup: {fileID: 0}
   Menu: {fileID: 0}
   Tutorial: {fileID: 0}
+  CityStateEventCard: {fileID: 0}
   BiomeButtonsCard: {fileID: 0}
   BiomeInfoCard: {fileID: 0}
+  GoalCard: {fileID: 0}
+  ManaCard: {fileID: 0}
+  CityStateInfoCard: {fileID: 0}
   UiCanvas: {fileID: 0}
 --- !u!1 &907897588265542385
 GameObject:
@@ -566,12 +568,12 @@ MonoBehaviour:
   Uninhabited: {r: 0.47058824, g: 0.40392157, b: 0.3529412, a: 1}
   PlayerColors:
   - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0.1810121, g: 0.23598002, b: 0.7941176, a: 1}
-  - {r: 0, g: 0.41176468, b: 0.12210952, a: 1}
-  - {r: 0.9338235, g: 0.86942196, b: 0, a: 1}
+  - {r: 0.21782663, g: 0.27362886, b: 0.8396226, a: 1}
+  - {r: 0.6413065, g: 0.080322154, b: 0.8962264, a: 1}
+  - {r: 0.046991818, g: 0.9056604, b: 0.42862228, a: 1}
   - {r: 1, g: 0.5586207, b: 0, a: 1}
   - {r: 0.7941176, g: 0, b: 0.6407705, a: 1}
-  - {r: 0.58823526, g: 0.40138406, b: 0.12110727, a: 1}
+  - {r: 1, g: 0.5980861, b: 0, a: 1}
   - {r: 0, g: 0.95862055, b: 1, a: 1}
 --- !u!1 &907897588811917984
 GameObject:

@@ -392,211 +392,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 492458124, guid: 05165ddf57ba6b247b4add4d26d2d2d0, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 754971454, guid: 05165ddf57ba6b247b4add4d26d2d2d0, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 813636877, guid: 05165ddf57ba6b247b4add4d26d2d2d0, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1252951708, guid: 05165ddf57ba6b247b4add4d26d2d2d0, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 2022514850, guid: 05165ddf57ba6b247b4add4d26d2d2d0, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
     - target: {fileID: 119340652866024030, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
+      propertyPath: m_FontData.m_Alignment
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732516997212998911, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-    - target: {fileID: 1428362745765722215, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732516997362611522, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732516997656313953, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-    - target: {fileID: 1951539582113745340, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732516998573377288, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951539583395800630, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-    - target: {fileID: 1951539582165567125, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000019073
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951539583395800630, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
+      propertyPath: m_SizeDelta.x
+      value: 397.3875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951539583395800630, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-    - target: {fileID: 1951539582167068166, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582207847016, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582252416234, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582360791290, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582432003886, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582484079313, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582566979916, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582576459835, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582623795829, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582769856075, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582806413159, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582834779003, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539582993961259, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583077057969, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583170745453, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583194417388, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583207666756, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583218136138, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583326240986, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583330015803, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583362710450, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583383950920, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583396332513, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583400155508, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583426555293, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583458887073, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.9
+      objectReference: {fileID: 0}
     - target: {fileID: 1951539583629174161, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
       propertyPath: m_Name
@@ -707,108 +542,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1951539583759354240, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
+    - target: {fileID: 1951539583926390132, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951539583926390132, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-    - target: {fileID: 1951539583772696014, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
+      propertyPath: m_SizeDelta.x
+      value: -0.93188477
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951539583926390132, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951539583926390132, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-    - target: {fileID: 1951539583853416348, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676553874421026150, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
+      propertyPath: m_AnchoredPosition.y
+      value: 149.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676553874421026150, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
         type: 3}
-    - target: {fileID: 1951539583926390131, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539583988796618, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539584075329290, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 1951539584091173492, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 2284689519273906927, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 3861899776029273301, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 3861899777736833743, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 3861899777782517714, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 3861899777794005512, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 3861899777830078385, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 4138276272290452640, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 6430260819393811804, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 7012343809803285790, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
-    - target: {fileID: 8336799251338398081, guid: 05165ddf57ba6b247b4add4d26d2d2d0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 64691dfb5069eb64da3435eca1a0b465,
-        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 28.981598
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05165ddf57ba6b247b4add4d26d2d2d0, type: 3}
 --- !u!1 &1951539582711842760 stripped
