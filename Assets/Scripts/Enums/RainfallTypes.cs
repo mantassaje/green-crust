@@ -6,7 +6,7 @@ using System.Text;
 public enum RainfallTypes
 {
     None,
-    DeadDry,
+    Arid,
     Dry,
     Humid,
     Wet

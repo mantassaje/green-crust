@@ -50,15 +50,16 @@ MonoBehaviour:
   Turn: 1
   IsLoaded: 0
   IsSandbox: 0
+  ClimateDebugMode: 0
   IsOnlneMode: 0
-  HumidityDistance: 6
+  HumidityDistance: 8
   OceanHumidityBase: 26
-  HumidityEmitQuality: 15
-  HumidityEmitToNearbyConst: 0.1
-  ColdDistance: 6
-  AbyssColdBase: 25
-  ColdEmitQuality: 15
-  ColdEmitToNearbyConst: 0.2
+  HumidityEmitQuality: 3
+  HumidityEmitToNearbyConst: 0.5
+  ColdDistance: 12
+  AbyssColdBase: 24
+  ColdEmitQuality: 3
+  ColdEmitToNearbyConst: 0.5
   GoalProgressString: 
   GoalSummary: 
   Players: []

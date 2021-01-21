@@ -55,8 +55,8 @@ public class TutorialPagesData : MonoBehaviour {
         },
         new PageText()
         {
-            Header = "Ancients",
-            Content = "Strong and old ecosystem in your biome is called ancient. It allows you to capture your opponents lands. Ancient can capture only the same biome. And there should be no existing ancient. If biome changes the ancient will disappear."
+            Header = "Ecosystem",
+            Content = "Ecosystem allows you to capture opponents lands. Ecosystem can capture only the same biome. And there should be no existing ecosystem. If biome changes the ecosystem will disappear."
         },
         new PageText()
         {

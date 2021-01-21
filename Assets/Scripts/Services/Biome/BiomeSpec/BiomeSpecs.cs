@@ -131,7 +131,7 @@ public class HotDesertBiomeSpec : IBiomeSpec
     {
         return !biome.IsWater
             && biome.Weather.HeatType == HeatTypes.Hot
-            && biome.Weather.RainfallType == RainfallTypes.DeadDry;
+            && biome.Weather.RainfallType == RainfallTypes.Arid;
     }
 
     public string GetDescription(Biome biome)
@@ -165,7 +165,7 @@ public class WarmDesertBiomeSpec : IBiomeSpec
     {
         return !biome.IsWater
             && biome.Weather.HeatType == HeatTypes.Warm
-            && biome.Weather.RainfallType == RainfallTypes.DeadDry;
+            && biome.Weather.RainfallType == RainfallTypes.Arid;
     }
 
     public string GetDescription(Biome biome)
@@ -199,7 +199,7 @@ public class ColdDesertBiomeSpec : IBiomeSpec
     {
         return !biome.IsWater
             && biome.Weather.HeatType == HeatTypes.Cold
-            && biome.Weather.RainfallType == RainfallTypes.DeadDry;
+            && biome.Weather.RainfallType == RainfallTypes.Arid;
     }
 
     public string GetDescription(Biome biome)
@@ -232,7 +232,7 @@ public class FrozenDesertBiomeSpec : IBiomeSpec
     public bool CanApply(Biome biome)
     {
         return !biome.IsWater
-            && biome.Weather.HeatType == HeatTypes.DeadCold;
+            && biome.Weather.HeatType == HeatTypes.Frozen;
     }
 
     public string GetDescription(Biome biome)
@@ -265,7 +265,7 @@ public class DeepSeaSpec : IBiomeSpec
     public bool CanApply(Biome biome)
     {
         return biome.IsWater
-            && biome.Weather.HeatType != HeatTypes.DeadCold
+            && biome.Weather.HeatType != HeatTypes.Frozen
             && biome.GetNearbyBiomesCache().All(near => near.IsWater);
     }
 
@@ -303,7 +303,7 @@ public class ShallowSeaSpec : IBiomeSpec
     public bool CanApply(Biome biome)
     {
         return biome.IsWater
-            && biome.Weather.HeatType != HeatTypes.DeadCold
+            && biome.Weather.HeatType != HeatTypes.Frozen
             && biome.GetNearbyBiomesCache().Any(near => !near.IsWater);
     }
 
@@ -341,7 +341,7 @@ public class IcaCapOceanBiomeSpec : IBiomeSpec
     public bool CanApply(Biome biome)
     {
         return biome.IsWater
-            && biome.Weather.HeatType == HeatTypes.DeadCold;
+            && biome.Weather.HeatType == HeatTypes.Frozen;
     }
 
     public string GetDescription(Biome biome)

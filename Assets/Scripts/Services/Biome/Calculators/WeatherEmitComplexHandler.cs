@@ -4,6 +4,8 @@ using System.Linq;
 
 public abstract class WeatherEmitComplexHandler
 {
+    private const int _numberOfEdges = 6;
+
     /// <summary>
     /// Total quantity that can be emited
     /// </summary>
@@ -32,8 +34,8 @@ public abstract class WeatherEmitComplexHandler
         {
             var withHumidityBiomes = allBiomes
                 .Where(v => GetEmitionWell(v) >= 1)
-                //Start from smallest
-                //.OrderByDescending(v => GetEmitValue(v))
+                //Sorting desc seems to produce more smooth transitions. But is sensetive to changes.
+                //Sorting by random non chaning sorter seems to not so sensetive to changes.
                 .OrderBy(v => v.Weather.Sorter)
                 .ToList();
 
@@ -51,14 +53,15 @@ public abstract class WeatherEmitComplexHandler
 
     protected virtual void EmitToNearbyBiomes(Biome biomeEmiter)
     {
+        var emitionWell = GetEmitionWell(biomeEmiter);
+
         var biomesReceivers = biomeEmiter.GetNearbyBiomesCache()
-            .Where(biomeReceiver => GetEmitionWell(biomeReceiver) + GetValueToEmit(biomeEmiter, biomeReceiver) < GetEmitionWell(biomeEmiter)
-                || biomeReceiver == biomeEmiter)
-            .OrderBy(v=>v.Weather.Sorter)
-            .ToList();
+            .Where(biomeReceiver => GetEmitionWell(biomeReceiver) + GetEdgeValueToEmit(emitionWell, biomeReceiver) < emitionWell
+                && biomeReceiver != biomeEmiter);
+
         foreach (var biomeReceiver in biomesReceivers)
         {
-            var addValue = GetValueToEmit(biomeEmiter, biomeReceiver);
+            var addValue = GetEdgeValueToEmit(emitionWell, biomeReceiver);
             AddEmission(biomeEmiter, -addValue);
             AddEmission(biomeReceiver, addValue);
             Commit(biomeReceiver);
@@ -67,27 +70,14 @@ public abstract class WeatherEmitComplexHandler
     }
 
     /// <summary>
-    /// Get value to emit.
-    /// </summary>
-    protected virtual float GetValueToEmit(Biome emiter)
-    {
-        return GetEmitionWell(emiter) * GetEmitRate();
-    }
-
-    /// <summary>
     /// Get value to emit based on both emiter and receiver.
     /// </summary>
-    protected virtual float GetValueToEmit(Biome emiter, Biome receiver)
+    protected virtual float GetEdgeValueToEmit(float emiterTotalWell, Biome receiver)
     {
-        return GetValueToEmit(emiter) * GetBiomeAbsorbtion(receiver, emiter);
+        return emiterTotalWell * EmitToNearRate * GetBiomeAbsorbtion(receiver) / _numberOfEdges / EmitQuality;
     }
 
-    protected virtual float GetEmitRate()
-    {
-        return EmitToNearRate / EmitQuality;
-    }
-
-    protected virtual float GetBiomeAbsorbtion(Biome biome, Biome emiter)
+    protected virtual float GetBiomeAbsorbtion(Biome biome)
     {
         var baseAbsorbtion = 1f - biome.Crust.GetHeightRatioSteped();
         baseAbsorbtion = baseAbsorbtion.GetMinMax(0f, 1f);

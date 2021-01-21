@@ -13,6 +13,8 @@ public class BiomeInfoCard : ManualUpdateBehaviour
     public Text AncientsText;
     public Text ManaGainText;
     public Text OwnerText;
+    public Text HeatText;
+    public Text RainfallText;
 
     public Image AncientImage;
 
@@ -32,6 +34,9 @@ public class BiomeInfoCard : ManualUpdateBehaviour
             TitleText.text = biome.Spec.Name;
             InfoText.text = biome.Spec.GetDescription(biome);
 
+            HeatText.text = $"Climate {biome.Weather.HeatType.ToString()}";
+            RainfallText.text = $"Rainfall {biome.Weather.RainfallType.ToString()}";
+
             AncientImage.sprite = biome.Spec.Ancient;
             AncientImage.gameObject.SetActive(biome.Spec.Ancient != null);
 
@@ -40,7 +45,7 @@ public class BiomeInfoCard : ManualUpdateBehaviour
 
             var natureCap = (int)BiomeNatureService.GetNatureCap(biome);
             var naturePop = (int)biome.Nature.Population;
-            NatureCountText.text = string.Format("Wildlife {0} / {1}", naturePop, natureCap);
+            NatureCountText.text = string.Format("Wildlife pop. {0} / {1}", naturePop, natureCap);
 
             if(biome.Nature.Population > 0)
             {
